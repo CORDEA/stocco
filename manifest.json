@@ -1,0 +1,28 @@
+{
+    "name": "Stocco",
+    "version": "0.0.1",
+    "description": "",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "css": ["css/content.css"],
+        "js": ["js/content.js"],
+        "run_at": "document_idle"
+    }],
+    "web_accessible_resources": [
+        "css/content.css"
+    ],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "tabs",
+        "storage",
+        "bookmarks",
+        "<all_urls>"
+    ],
+    "manifest_version": 2
+}

@@ -1,0 +1,19 @@
+.bookmarker {
+    height: 100px;
+    width: 100px;
+    border: dotted 1px black;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+}
+
+.bookmarker:hover {
+    animation-name: bookmarker-anim;
+    animation-duration: 1s;
+}
+
+@keyframes bookmarker-anim {
+    from { background-color: transparent; }
+    to { background-color: grey; }
+}
